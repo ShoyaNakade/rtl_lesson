@@ -7,6 +7,7 @@ import { UseEffectRender } from "UseEffectRender";
 import { MockServer } from "MockServer";
 import { MyRedux } from "MyRedux";
 import { ReduxAsync } from "ReduxAsync";
+import { CustomeHooks } from "CustomeHooks";
 
 function App() {
   const data = [
@@ -26,7 +27,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Counter />
         <RenderInput outputConsole={console.log} />
         <FrameworkList frameworks={data} />
@@ -34,6 +34,7 @@ function App() {
         <MockServer />
         <MyRedux />
         <ReduxAsync />
+        <CustomeHooks />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
